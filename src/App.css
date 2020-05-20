@@ -1,38 +1,133 @@
-.App {
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
+}
+
+main {
+  height: 100vh;
+  background-color: rebeccapurple;
+}
+
+.dashboard {
+  height: 90vh;
+  width: 80%;
+  background-color: orange;
+  border-radius: 10px;
+}
+
+.dashboard .row {
+  height: 100%;
+}
+
+.header {
+  background-color: #122c34;
+}
+
+.section {
+  background-color: pink;
+}
+
+.header-content-one {
+  height: 50%;
+  color: white;
+  border-radius: 10%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-content-one img {
+  width: 60%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.header-content-one h2 {
+  margin-top: 30px;
+}
+
+.header-content-two {
+  height: 45%;
+  /* color: #f2a541; */
+  color: #c6ddf0;
+  background-color: #224870;
+  border-top-right-radius: 40%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  border-top-left-radius: 10%;
+}
+
+.header-content-two h4 {
+  margin-bottom: 35px;
+  font-size: 1.1rem;
+}
+
+
+
+
+
+
+@media all and (min-width: 768px) and (max-width:992px) {
+  main {
+    background-color: bisque;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media all and (min-width: 575px) and (max-width:767px) {
+  main {
+    height: auto;
+    background-color: blue;
   }
-  to {
-    transform: rotate(360deg);
+
+  .dashboard {
+    margin-top: 20px;
+    height: auto;
+  }
+
+  .header {
+    height: 90vh;
+  }
+
+  .section {
+    height: auto;
+  }
+
+  .header-content-one {
+    height: 50%;
+  }
+
+  .header-content-two {
+    height: 50%;
+  }
+
+}
+
+@media all and (max-width:574px) {
+  main {
+    height: auto;
+    background-color: yellow;
+  }
+
+  .dashboard {
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .header {
+    height: 90vh;
+  }
+
+  .section {
+    height: auto;
+  }
+
+  .header-content-one {
+    height: 50%;
+  }
+
+  .header-content-two {
+    height: 50%;
   }
 }
