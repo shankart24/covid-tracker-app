@@ -116,15 +116,22 @@ main {
   }
 
   .header {
-    height: 80vh;
+    height: 70vh;
+    position: relative;
   }
 
   .header-content-one {
+    margin-top: 10px;
     height: auto;
+    position: absolute;
+    top: 0;
   }
 
   .header-content-two {
     height: auto;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5%;
   }
 
   .section {
