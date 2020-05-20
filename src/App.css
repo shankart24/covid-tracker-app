@@ -111,7 +111,7 @@ main {
   }
 
   .dashboard {
-    height: 1000px;
+    height: 100vh;
     margin-top: 20px;
     position: relative;
   }
@@ -120,15 +120,15 @@ main {
     height: 80vh;
   }
 
-  .section {
+  .header-content-one {
     height: auto;
   }
 
-  .header-content-one {
-    height: 50%;
+  .header-content-two {
+    height: auto;
   }
 
-  .header-content-two {
-    height: 50%;
+  .section {
+    height: auto;
   }
 }
