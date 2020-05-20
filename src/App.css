@@ -10,13 +10,13 @@
 
 main {
   height: 100vh;
-  background-color: rebeccapurple;
+  /* background-color: rebeccapurple; */
 }
 
 .dashboard {
   height: 90vh;
   width: 80%;
-  background-color: orange;
+  /* background-color: orange; */
   border-radius: 10px;
 }
 
@@ -29,7 +29,7 @@ main {
 }
 
 .section {
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 .header-content-one {
@@ -41,6 +41,20 @@ main {
 
 .header-content-one img {
   width: 60%;
+  animation-name: moving;
+  animation-duration: 1s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moving{
+  from{
+    transform: translateY(0px) rotateY(0deg);
+  }
+
+  to{
+    transform: translateY(10px) rotateY(15deg);
+  }
 }
 
 .header-content-one h2 {
@@ -107,11 +121,11 @@ main {
 @media all and (max-width:574px) {
   main {
     height: auto;
-    background-color: yellow;
+    /* background-color: yellow; */
   }
 
   .dashboard {
-    height: 1000px;
+    height: 900px;
     margin-top: 20px;
   }
 
@@ -125,7 +139,7 @@ main {
 
   .header-content-row {
     height: auto;
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
   }
 
   .section {
