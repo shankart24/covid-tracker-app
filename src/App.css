@@ -90,16 +90,16 @@ main {
     height: 90vh;
   }
 
-  .section {
+  .header-content-one {
     height: auto;
   }
 
-  .header-content-one {
-    height: 50%;
+  .header-content-two {
+    height: auto;
   }
 
-  .header-content-two {
-    height: 50%;
+  .section {
+    height: auto;
   }
 
 }
@@ -111,28 +111,23 @@ main {
   }
 
   .dashboard {
-    height: 100vh;
+    height: auto;
     margin-top: 20px;
     position: relative;
   }
 
   .header {
-    height: 60vh;
-
+    height: 80vh;
   }
 
   .header-content-one {
-    margin-top: 10px;
-    height: auto;
-    position: absolute;
-    top: 0;
+    margin-top: 2%;
   }
 
-  .header-content-two {
-    height: auto;
-    position: absolute;
-    bottom: 0;
 
+  .header-content-row {
+    height: 80vh;
+    flex-direction: column-reverse;
   }
 
   .section {
