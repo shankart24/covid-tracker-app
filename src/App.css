@@ -113,20 +113,23 @@ main {
   .dashboard {
     height: 1000px;
     margin-top: 20px;
+    position: relative;
   }
 
   .header {
     height: 90vh;
-    position: relative;
-  }
-
-  .header-content-two {
     position: absolute;
+    left: 0;
+    top: 0;
     bottom: 0;
+    right: 0;
   }
 
   .section {
     height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 
   .header-content-one {
