@@ -5,7 +5,7 @@ const SectionContent = () => {
 	return (
 		<div className="content-grid">
 			<div className="greeting d-flex align-items-center">
-				<h2 className="ml-4">Hello there!</h2>
+				<h2 className="ml-4 text-white">Statistics</h2>
 			</div>
 			<div className="cases p-4 d-flex justify-content-center align-items-center">
 				<Card width={"90%"} height={"auto"} />

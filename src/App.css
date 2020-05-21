@@ -17,7 +17,8 @@ main {
   /* height: 90vh; */
   height: auto;
   width: 80%;
-  background-color: orange;
+  /* background-color: orange; */
+  background-color: #122c34;
   border-radius: 10px;
 }
 
@@ -31,7 +32,7 @@ main {
 }
 
 .section {
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 .header-content-one {
@@ -81,7 +82,7 @@ main {
 
 .content-grid {
   height: 100%;
-  background-color: seagreen;
+  /* background-color: seagreen; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 80px auto 200px;
@@ -93,32 +94,33 @@ main {
 
 .greeting {
   grid-area: greeting;
-  background-color: lightsalmon;
+  background-color: #224870;
+  /* background-color: lightsalmon; */
 }
 
 .cases {
   grid-area: cases;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .deaths {
   grid-area: deaths;
-  background-color: rebeccapurple;
+  /* background-color: rebeccapurple; */
 }
 
 .country {
   grid-area: country;
-  background-color: bisque;
+  /* background-color: bisque; */
 }
 
 .recovered {
   grid-area: recovered;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .global {
   grid-area: global;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 
@@ -132,17 +134,17 @@ main {
 @media all and (max-width:574px) {
   main {
     height: auto;
-    background-color: yellow;
+    /* background-color: yellow; */
   }
 
   .dashboard {
-    height: auto;
+    height: 1800px;
     margin-top: 20px;
     width: 90%;
   }
 
   .header {
-    height: 90vh;
+    height: auto;
   }
 
   .header-content-one {
@@ -151,7 +153,6 @@ main {
 
   .header-content-row {
     height: auto;
-    /* flex-direction: column-reverse; */
   }
 
   .section {
@@ -173,14 +174,12 @@ main {
 
 
 
-
-
 /* FOR TABLET */
 
 @media all and (min-width: 575px) and (max-width:767px) {
   main {
     height: auto;
-    background-color: blue;
+    /* background-color: blue; */
   }
 
   .dashboard {
@@ -199,6 +198,7 @@ main {
 
   .header-content-two {
     height: auto;
+    border-radius: 5%;
   }
 
   .section {
@@ -215,7 +215,7 @@ main {
 @media all and (min-width: 768px) and (max-width:992px) {
   main {
     height: auto;
-    background-color: bisque;
+    /* background-color: bisque; */
   }
 
   .dashboard {
@@ -223,7 +223,7 @@ main {
     width: 90%;
   }
 
-  .header{
+  .header {
     height: 90vh;
   }
 
