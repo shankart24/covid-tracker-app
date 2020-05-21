@@ -141,7 +141,21 @@ main {
 }
 
 .cases .card {
-  box-shadow: 0 0 10px #f7b731;
+  animation-name: glow-cases;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes glow-cases {
+  from {
+    box-shadow: 0 0 15px #f7b731;
+  }
+
+  to {
+    box-shadow: 0 0 5px #f7b731;
+  }
 }
 
 .cases p {
@@ -154,7 +168,22 @@ main {
 }
 
 .deaths .card {
-  box-shadow: 0 0 10px #eb3b5a;
+  animation-name: glow-death;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes glow-death {
+  from {
+    box-shadow: 0 0 15px #eb3b5a;
+  }
+
+  to {
+    box-shadow: 0 0 5px #eb3b5a;
+    ;
+  }
 }
 
 .deaths p {
@@ -167,7 +196,22 @@ main {
 }
 
 .recovered .card {
-  box-shadow: 0 0 10px #20bf6b;
+  animation-name: glow-recovered;
+  animation-duration: 1s;
+  animation-delay: -0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes glow-recovered {
+  from {
+    box-shadow: 0 0 15px #20bf6b;
+  }
+
+  to {
+    box-shadow: 0 0 5px #20bf6b;
+  }
 }
 
 .recovered p {
