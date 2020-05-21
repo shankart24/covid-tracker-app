@@ -13,7 +13,7 @@ const HeaderContent = () => {
 			justify-content-center align-items-center flex-column"
 			>
 				<h4>Keep track of the raising Covid19 cases in an area.</h4>
-				<input type="text" placeholder="Search" className="form-control" />
+				<input type="text" placeholder="Ex: Telangana" className="form-control" />
 			</div>
 		</div>
 	);

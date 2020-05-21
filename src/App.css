@@ -8,11 +8,22 @@
   font-family: 'Jost', sans-serif;
 }
 
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./stock/image2.jpg");
+  background-position: center;
+  background-attachment: fixed;
+}
+
 main {
   height: 100vh;
   /* background-color: rebeccapurple; */
 }
 
+
+
+
+
+/* DASHBOARD */
 .dashboard {
   /* height: 90vh; */
   height: auto;
@@ -26,13 +37,17 @@ main {
   height: 100%;
 }
 
+/*  */
+
+
+
+
+
+
+/* HEADER */
 .header {
   background-color: #122c34;
   border-radius: 50px;
-}
-
-.section {
-  /* background-color: pink; */
 }
 
 .header-content-one {
@@ -66,8 +81,7 @@ main {
 
 .header-content-two {
   height: 45%;
-  /* color: #f2a541; */
-  color: #c6ddf0;
+  color: white;
   background-color: #224870;
   border-top-right-radius: 40%;
   border-bottom-left-radius: 10%;
@@ -80,6 +94,25 @@ main {
   font-size: 1.1rem;
 }
 
+/*  */
+
+
+
+
+
+/* SECTION  */
+.section {
+  /* background-color: pink; */
+}
+
+/*  */
+
+
+
+
+
+
+/* CONTENT GRID */
 .content-grid {
   height: 100%;
   /* background-color: seagreen; */
@@ -89,7 +122,11 @@ main {
   grid-template-areas: "greeting greeting greeting"
     "cases deaths country"
     "cases recovered country"
-    "global global global";
+    "global global country";
+}
+
+.card {
+  border-radius: 10px;
 }
 
 .greeting {
@@ -103,14 +140,25 @@ main {
   /* background-color: red; */
 }
 
+.cases .card {
+  box-shadow: 0 0 10px #f7b731;
+}
+
+.cases p {
+  font-size: 5rem;
+}
+
 .deaths {
   grid-area: deaths;
   /* background-color: rebeccapurple; */
 }
 
-.country {
-  grid-area: country;
-  /* background-color: bisque; */
+.deaths .card {
+  box-shadow: 0 0 10px #eb3b5a;
+}
+
+.deaths p {
+  font-size: 2rem;
 }
 
 .recovered {
@@ -118,19 +166,46 @@ main {
   /* background-color: aqua; */
 }
 
+.recovered .card {
+  box-shadow: 0 0 10px #20bf6b;
+}
+
+.recovered p {
+  font-size: 2rem;
+}
+
+.country {
+  grid-area: country;
+  /* background-color: bisque; */
+}
+
+.country .card {
+  box-shadow: 0 0 10px #2d98da;
+}
+
+.country p {
+  font-size: 2.4rem;
+}
+
 .global {
   grid-area: global;
   /* background-color: yellow; */
 }
 
+.global .card {
+  box-shadow: 0 0 10px #8854d0;
+}
 
+.global p {
+  font-size: 1.8rem;
+}
 
+/*  */
 
 
 
 
 /* FOR MOBILE */
-
 @media all and (max-width:574px) {
   main {
     height: auto;
@@ -138,7 +213,7 @@ main {
   }
 
   .dashboard {
-    height: 1800px;
+    height: 1900px;
     margin-top: 20px;
     width: 90%;
   }
@@ -172,11 +247,9 @@ main {
 /*  */
 
 
-
-
 /* FOR TABLET */
-
 @media all and (min-width: 575px) and (max-width:767px) {
+
   main {
     height: auto;
     /* background-color: blue; */
@@ -205,14 +278,23 @@ main {
     height: auto;
   }
 
+  .content-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "greeting greeting"
+      "cases cases"
+      "deaths recovered"
+      "country country"
+      "global global";
+  }
+
 }
 
 /*  */
 
 
 /* FOR LAPTOPS */
-
 @media all and (min-width: 768px) and (max-width:992px) {
+
   main {
     height: auto;
     /* background-color: bisque; */
