@@ -257,14 +257,13 @@ main {
 
   main {
     height: auto;
-    width: 100vw;
     /* background-color: yellow; */
   }
 
   .dashboard {
     height: 2200px;
     margin-top: 20px;
-    width: 100%;
+    width: 90%;
   }
 
   .header {
