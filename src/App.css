@@ -9,9 +9,9 @@
 }
 
 body {
+  height: auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./stock/image2.jpg");
   background-position: center;
-  background-attachment: fixed;
 }
 
 main {
@@ -27,7 +27,7 @@ main {
 .dashboard {
   /* height: 90vh; */
   height: auto;
-  width: 80%;
+  width: 90%;
   /* background-color: orange; */
   background-color: #122c34;
   border-radius: 10px;
@@ -187,7 +187,7 @@ main {
 }
 
 .deaths p {
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 .recovered {
@@ -198,7 +198,6 @@ main {
 .recovered .card {
   animation-name: glow-recovered;
   animation-duration: 1s;
-  animation-delay: -0.5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
   animation-direction: alternate-reverse;
@@ -215,7 +214,7 @@ main {
 }
 
 .recovered p {
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 
 .country {
@@ -224,7 +223,7 @@ main {
 }
 
 .country .card {
-  box-shadow: 0 0 10px #2d98da;
+  box-shadow: 0 0 10px #224870;
 }
 
 .country p {
@@ -237,7 +236,7 @@ main {
 }
 
 .global .card {
-  box-shadow: 0 0 10px #8854d0;
+  box-shadow: 0 0 10px #8e44ad;
 }
 
 .global p {
@@ -257,7 +256,7 @@ main {
   }
 
   .dashboard {
-    height: 1900px;
+    height: 2200px;
     margin-top: 20px;
     width: 90%;
   }
