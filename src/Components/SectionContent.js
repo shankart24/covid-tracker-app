@@ -20,8 +20,6 @@ const SectionContent = (props) => {
 
 	const [stateInfo, setStateInfo] = useState(props);
 
-	console.log(props.stateName);
-
 	useEffect(() => {
 		fetch("https://api.rootnet.in/covid19-in/unofficial/covid19india.org/statewise")
 			.then((response) => response.json())
@@ -32,11 +30,23 @@ const SectionContent = (props) => {
 
 	return (
 		<div className="content-grid">
-			<div className="greeting d-flex align-items-center rounded">
-				<h2 className="ml-4 text-white">
-					<img src={statistics} width="35" className="mr-3 mb-2" />
+			<div className="greeting d-flex justify-content-between align-items-center rounded">
+				<h2 className="text-white ml-2">
+					<img
+						src={statistics}
+						width="35"
+						className="ml-lg-4 mr-lg-3 mb-lg-2 ml-md-4 mr-md-3 mb-md-2 ml-sm-4 mr-sm-3 mb-sm-2"
+					/>
 					Statistics
 				</h2>
+				<br />
+				<input
+					type="text"
+					id="stateName"
+					placeholder="Ex: Telangana"
+					className="form-control mr-lg-4 mb-lg-2 mr-md-4 mb-md-2 mr-sm-4 mb-sm-2 mr-2"
+					style={{ width: "40%" }}
+				/>
 			</div>
 			<div className="cases p-3 d-flex justify-content-center align-items-center">
 				<Card

@@ -91,8 +91,9 @@ main {
 
 .header-content-two h4 {
   margin-bottom: 35px;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
+
 
 /*  */
 
@@ -118,7 +119,7 @@ main {
   /* background-color: seagreen; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 80px auto 200px;
+  grid-template-rows: 90px auto 200px;
   grid-template-areas: "greeting greeting greeting"
     "cases deaths country"
     "cases recovered country"
@@ -257,8 +258,8 @@ main {
 
   .dashboard {
     height: 2200px;
-    margin-top: 20px;
-    width: 90%;
+    /* margin-top: 20px; */
+    width: 100%;
   }
 
   .header {
@@ -285,6 +286,11 @@ main {
       "country country"
       "global global";
   }
+
+  .greeting img {
+    display: none;
+  }
+
 }
 
 /*  */
