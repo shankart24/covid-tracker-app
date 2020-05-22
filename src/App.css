@@ -31,6 +31,7 @@ main {
   /* background-color: orange; */
   background-color: #122c34;
   border-radius: 10px;
+  margin-top: 5%;
 }
 
 .dashboard .row {
@@ -247,18 +248,22 @@ main {
 /*  */
 
 
-
-
 /* FOR MOBILE */
 @media all and (max-width:574px) {
+
+  body {
+    height: auto;
+  }
+
   main {
     height: auto;
+    width: 100vw;
     /* background-color: yellow; */
   }
 
   .dashboard {
     height: 2200px;
-    /* margin-top: 20px; */
+    margin-top: 20px;
     width: 100%;
   }
 
@@ -270,21 +275,28 @@ main {
     margin-top: 2%;
   }
 
+  .header-content-two {
+    height: 30%;
+    border-radius: 5%;
+  }
+
   .header-content-row {
     height: auto;
   }
 
   .section {
     height: auto;
+    width: 100%;
   }
 
   .content-grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "greeting greeting"
-      "cases cases"
-      "deaths recovered"
-      "country country"
-      "global global";
+    grid-template-columns: 1fr;
+    grid-template-areas: "greeting"
+      "cases"
+      "deaths"
+      "recovered"
+      "country"
+      "global";
   }
 
   .greeting img {
@@ -298,6 +310,10 @@ main {
 
 /* FOR TABLET */
 @media all and (min-width: 575px) and (max-width:767px) {
+
+  body {
+    height: auto;
+  }
 
   main {
     height: auto;

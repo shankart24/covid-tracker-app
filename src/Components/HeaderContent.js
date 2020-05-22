@@ -13,7 +13,7 @@ const HeaderContent = () => {
 				className="col-lg-12 col-md-12 col-sm-8 header-content-two d-flex 
 			justify-content-center align-items-center flex-column"
 			>
-				<h4>Keep track of the raising Covid19 cases in an area.</h4>
+				<h4 style={{ textAlign: "center" }}>Keep track of the raising Covid19 cases in an area.</h4>
 			</div>
 		</div>
 	);
