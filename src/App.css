@@ -15,9 +15,7 @@ body {
 }
 
 main {
-  /* height: 100vh; */
   height: auto;
-  /* background-color: rebeccapurple; */
 }
 
 
@@ -26,10 +24,8 @@ main {
 
 /* DASHBOARD */
 .dashboard {
-  /* height: 90vh; */
   height: auto;
   width: 90%;
-  /* background-color: orange; */
   background-color: #122c34;
   border-radius: 10px;
   margin-top: 1%;
@@ -95,20 +91,9 @@ main {
   margin-bottom: 35px;
   font-size: 1.3rem;
 }
-
-
 /*  */
 
 
-
-
-
-/* SECTION  */
-.section {
-  /* background-color: pink; */
-}
-
-/*  */
 
 
 
@@ -118,7 +103,6 @@ main {
 /* CONTENT GRID */
 .content-grid {
   height: 100%;
-  /* background-color: seagreen; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 90px auto 200px;
@@ -135,12 +119,10 @@ main {
 .greeting {
   grid-area: greeting;
   background-color: #224870;
-  /* background-color: lightsalmon; */
 }
 
 .cases {
   grid-area: cases;
-  /* background-color: red; */
 }
 
 .cases .card {
@@ -167,7 +149,6 @@ main {
 
 .deaths {
   grid-area: deaths;
-  /* background-color: rebeccapurple; */
 }
 
 .deaths .card {
@@ -195,7 +176,6 @@ main {
 
 .recovered {
   grid-area: recovered;
-  /* background-color: aqua; */
 }
 
 .recovered .card {
@@ -222,7 +202,6 @@ main {
 
 .country {
   grid-area: country;
-  /* background-color: bisque; */
 }
 
 .country .card {
@@ -235,7 +214,6 @@ main {
 
 .global {
   grid-area: global;
-  /* background-color: yellow; */
 }
 
 .global .card {
@@ -258,12 +236,10 @@ main {
 
   main {
     height: auto;
-    /* background-color: yellow; */
   }
 
   .dashboard {
     height: 2500px;
-    /* height: auto; */
     margin-top: 20px;
     width: 90%;
   }
@@ -318,7 +294,6 @@ main {
 
   main {
     height: auto;
-    /* background-color: blue; */
   }
 
   .dashboard {
@@ -363,7 +338,6 @@ main {
 
   main {
     height: auto;
-    /* background-color: bisque; */
   }
 
   .dashboard {
