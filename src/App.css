@@ -15,7 +15,8 @@ body {
 }
 
 main {
-  height: 100vh;
+  /* height: 100vh; */
+  height: auto;
   /* background-color: rebeccapurple; */
 }
 
@@ -31,7 +32,7 @@ main {
   /* background-color: orange; */
   background-color: #122c34;
   border-radius: 10px;
-  margin-top: 5%;
+  margin-top: 1%;
 }
 
 .dashboard .row {
@@ -238,7 +239,7 @@ main {
 }
 
 .global .card {
-  box-shadow: 0 0 10px #8e44ad;
+  box-shadow: 0 0 10px #224870;
 }
 
 .global p {
@@ -261,7 +262,8 @@ main {
   }
 
   .dashboard {
-    height: 2200px;
+    height: 2500px;
+    /* height: auto; */
     margin-top: 20px;
     width: 90%;
   }
@@ -276,7 +278,7 @@ main {
 
   .header-content-two {
     height: 30%;
-    border-radius: 5%;
+    border-radius: 2%;
   }
 
   .header-content-row {

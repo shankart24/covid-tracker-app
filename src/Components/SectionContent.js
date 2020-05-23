@@ -56,6 +56,7 @@ const SectionContent = (props) => {
 					title={"Total Cases"}
 					icon={cases}
 					list1Display={"none"}
+					list2Display={"none"}
 					cases={confirmed}
 				/>
 			</div>
@@ -68,6 +69,7 @@ const SectionContent = (props) => {
 					title={"Deaths"}
 					icon={death}
 					list1Display={"none"}
+					list2Display={"none"}
 					cases={deaths}
 				/>
 			</div>
@@ -79,6 +81,7 @@ const SectionContent = (props) => {
 					title={"Recovered"}
 					icon={recover}
 					list1Display={"none"}
+					list2Display={"none"}
 					cases={recovered}
 				/>
 			</div>
@@ -90,13 +93,22 @@ const SectionContent = (props) => {
 					title={"Country"}
 					icon={india}
 					list1Display={""}
+					list2Display={"none"}
 					countryConfirmed={countryConfirmed}
 					countryDeaths={countryDeaths}
 					countryRecovered={countryRecovered}
 				/>
 			</div>
-			<div className="global p-3 d-flex justify-content-center align-items-center flex-row">
-				<Card width={"100%"} height={"100%"} bgcolor={"#8e44ad"} title={"Global"} icon={global} list1Display={"none"} />
+			<div className="global p-3">
+				<Card
+					width={"100%"}
+					height={"100%"}
+					bgcolor={"#224870"}
+					title={"Global"}
+					icon={global}
+					list1Display={"none"}
+					list2Display={""}
+				/>
 			</div>
 		</div>
 	);
