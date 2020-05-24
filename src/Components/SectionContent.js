@@ -9,23 +9,27 @@ import statistics from "../stock/statistics.png";
 
 const SectionContent = (props) => {
 	const [countryInfo, setCountryInfo] = useState([]);
-
 	useEffect(() => {
 		fetch("https://api.rootnet.in/covid19-in/unofficial/covid19india.org/statewise")
 			.then((response) => response.json())
 			.then((data) => setCountryInfo(data.data.total));
 	}, []);
-
 	const { confirmed: countryConfirmed, recovered: countryRecovered, deaths: countryDeaths } = countryInfo;
 
-	const [stateInfo, setStateInfo] = useState(props);
+	const [globalInfo, setGlobalInfo] = useState([]);
+	useEffect(() => {
+		fetch("https://api.covid19api.com/summary")
+			.then((response) => response.json())
+			.then((data) => setGlobalInfo(data.Global));
+	}, []);
+	const { TotalConfirmed, TotalDeaths, TotalRecovered } = globalInfo;
 
+	const [stateInfo, setStateInfo] = useState(props);
 	useEffect(() => {
 		fetch("https://api.rootnet.in/covid19-in/unofficial/covid19india.org/statewise")
 			.then((response) => response.json())
 			.then((data) => setStateInfo(data.data.statewise[11]));
 	}, []);
-
 	const { state, confirmed, deaths, recovered } = stateInfo;
 
 	return (
@@ -60,7 +64,6 @@ const SectionContent = (props) => {
 					cases={confirmed}
 				/>
 			</div>
-
 			<div className="deaths p-3 d-flex justify-content-center align-items-center">
 				<Card
 					width={"100%"}
@@ -108,6 +111,9 @@ const SectionContent = (props) => {
 					icon={global}
 					list1Display={"none"}
 					list2Display={""}
+					TotalConfirmed={TotalConfirmed}
+					TotalDeaths={TotalDeaths}
+					TotalRecovered={TotalRecovered}
 				/>
 			</div>
 		</div>

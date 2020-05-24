@@ -1,4 +1,5 @@
 import React from "react";
+import CountUp from "react-countup";
 
 const Card = (props) => {
 	return (
@@ -37,20 +38,20 @@ const Card = (props) => {
 					</div>
 				</div>
 
-				<div className="globalstats" style={{ display: props.list2Display, textAlign: "center" }}>
+				<div className="globalstats" style={{ display: props.list2Display }}>
 					<div className="mt-2 mb-4">
 						<h5 style={{ color: "#f7b731" }}>
-							Total cases : <span className="text-white">1029254</span>
+							Total cases : <span className="text-white ml-1">{props.TotalConfirmed}</span>
 						</h5>
 					</div>
 					<div className="mt-2 mb-4">
 						<h5 style={{ color: "#eb3b5a" }}>
-							Deaths : <span className="text-white">23454</span>
+							Deaths : <span className="text-white ml-1">{props.TotalDeaths}</span>
 						</h5>
 					</div>
 					<div className="mt-2 mb-4">
 						<h5 style={{ color: "#20bf6b" }}>
-							Recovered : <span className="text-white">3454</span>
+							Recovered : <span className="text-white ml-1">{props.TotalRecovered}</span>
 						</h5>
 					</div>
 				</div>
