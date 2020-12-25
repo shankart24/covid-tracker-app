@@ -44,13 +44,13 @@ const SectionContent = (props) => {
 					Statistics
 				</h2>
 				<br />
-				<input
-					type="text"
-					id="stateName"
-					placeholder="Ex: Telangana"
-					className="form-control mr-lg-4 mb-lg-2 mr-md-4 mb-md-2 mr-sm-4 mb-sm-2 mr-2"
-					style={{ width: "40%" }}
-				/>
+// 				<input
+// 					type="text"
+// 					id="stateName"
+// 					placeholder="Ex: Telangana"
+// 					className="form-control mr-lg-4 mb-lg-2 mr-md-4 mb-md-2 mr-sm-4 mb-sm-2 mr-2"
+// 					style={{ width: "40%" }}
+// 				/>
 			</div>
 			<div className="cases p-3 d-flex justify-content-center align-items-center">
 				<Card
